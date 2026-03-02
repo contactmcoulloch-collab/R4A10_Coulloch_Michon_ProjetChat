@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     'base' => [
         'server' => 'mysql-projetphp-michon-coulloch.alwaysdata.net:3306',
-        'db' => 'projetphp-michon-coulloch_bd',
+        'db' => 'projetphp-michon-coulloch_messagerie',
         'login' => '442040_user',
         'mdp' => '$iutinfo',
         'type' => 'mysql',

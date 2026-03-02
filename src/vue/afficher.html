@@ -1,18 +1,28 @@
 <!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Chat</title>
+	<script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+    <script src="enregistrement.js"></script>
+</head>
 
+<body>
+<form id="chat">
 <div id = 'top'>
-    <form>
         Mon pseudo
-        <input type = "text">
-    </form>
-</div>
+        <input type = "text" id = "pseudo" name = "pseudo">
+    </div>
+    
+    <div id = 'mid'>
+        
+    </div>
+    
+    <div id = 'bottom'>
+        <textarea id="message" name="message" rows="4" cols="50">
+</textarea>
 
-<div id = 'mid'>
-
-</div>
-
-<div id = 'bottom'>
-<input type = "text"><input type="submit" value = "Envoyer"> 
-</div>
-
+        <input type="button" value = "Envoyer" id ="btnEnvoie"> 
+    </div>
+</form>
+</body>
 </html>
