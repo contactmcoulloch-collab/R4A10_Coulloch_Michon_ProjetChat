@@ -14,7 +14,6 @@ h2 {border-bottom: 5px solid darkgreen;
     width:auto;}
 
  .inbox {
-        display: flex;
     gap: 20px;
     margin: 150px;
     border-style: solid;
@@ -22,7 +21,8 @@ h2 {border-bottom: 5px solid darkgreen;
     align-items: center;
     justify-content: center;
     text-align: left;
-    }
+    border-radius: 15px;
+ }
 
   .btn{
         font-style: normal white;
@@ -30,3 +30,16 @@ h2 {border-bottom: 5px solid darkgreen;
         color: white;
         border-radius: 5%;
     }
+
+    .mail{
+        margin : 20px;
+        padding : 20px;
+        background-color: rgba(0, 128, 0, 0.3);
+        border-radius: 10px;
+
+    }
+
+    .content{
+        font-size: 1.2em;
+    }
+
