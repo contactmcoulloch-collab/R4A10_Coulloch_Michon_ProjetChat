@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-color: aqua;
+}
+
+h2 {border-bottom: 5px solid darkgreen;
+        background-color: lightblue;
+        font-size: 1.3em;
+    width:auto;}
+
+ .inbox {
+        display: flex;
+    gap: 20px;
+    margin: 150px;
+    border-style: solid;
+    border-inline-color: green;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    }
+
+  .btn{
+        font-style: normal white;
+        background-color: darkgreen;
+        color: white;
+        border-radius: 5%;
+    }

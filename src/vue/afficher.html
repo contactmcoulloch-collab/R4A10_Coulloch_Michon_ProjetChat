@@ -4,24 +4,26 @@
 	<title>Chat</title>
 	<script src="https://code.jquery.com/jquery-4.0.0.js"></script>
     <script src="enregistrement.js"></script>
+    <link rel="stylesheet" href="designChat.css">
 </head>
 
 <body>
+    <h2>Ma messagerie</h2>
 <form id="chat">
-<div id = 'top'>
-        Mon pseudo
+<div id = 'top' class="container">
+       <h3>Mon pseudo</h3>
         <input type = "text" id = "pseudo" name = "pseudo">
     </div>
     
-    <div id = 'mid'>
-        
+    <div id = 'mid' class="inbox">
+        message
     </div>
     
-    <div id = 'bottom'>
+    <div id = 'bottom' class="container">
         <textarea id="message" name="message" rows="4" cols="50">
 </textarea>
 
-        <input type="button" value = "Envoyer" id ="btnEnvoie"> 
+        <input type="button" value = "Envoyer" id ="btnEnvoie" class="btn"> 
     </div>
 </form>
 </body>
