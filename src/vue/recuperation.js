@@ -1,6 +1,6 @@
 alert("usm");
 $(document).ready(function() {
     setInterval(function() {
-        $("#mid").load("recuperer.php");
+        $("#mid table").load("../actions/recuperer.php");
     }, 2000);
 });
