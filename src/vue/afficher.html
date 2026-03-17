@@ -6,32 +6,22 @@
     <script src="enregistrement.js"></script>
     <script src="recuperation.js"></script>
     <link rel="stylesheet" href="designChat.css">
-</head>
-
-<body>
-    <h2>Ma messagerie</h2>
-<form id="chat">
-<div id = 'top' class="container">
-       <h3>Mon pseudo :</h3>
-        <input type = "text" id = "pseudo" name = "pseudo">
-    </div>
-    
-    <div id = 'mid' class="inbox">
+<h2>Ma messagerie</h2>
+    <div id="container">
+    <div class="container">
+        <div id="top">
+            <h3>Mon pseudo :</h3>
+            <input type="text" id="pseudo" name="pseudo" placeholder="Entrez votre pseudo">
+        </div>
         
-    </div>
-    
-    <div id="bottom" class="container">
-
-    <div id="ligneMessage">
-        <h3>Message :</h3>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <div class="message-area">
+            <h3>Message :</h3>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Écrivez votre message ici"></textarea>
+            <input type="button" value="Envoyer" id="btnEnvoie" class="btn">
+        </div>
     </div>
 
-    <input type="button" value="Envoyer" id="btnEnvoie" class="btn">
-
+    <div id ="inbox" class="inbox">
+        <!-- Messages will be displayed here -->
+    </div>
 </div>
-
-</div>
-</form>
-</body>
-</html>
