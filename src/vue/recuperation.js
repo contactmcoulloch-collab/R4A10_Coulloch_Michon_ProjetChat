@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 function loaddata(response, status, xhr) {
     if (status == 'success') {
-        data = JSON.parse(response);
+        data = JSON.parse(response).reverse();
 
     $("#inbox")
     .empty()

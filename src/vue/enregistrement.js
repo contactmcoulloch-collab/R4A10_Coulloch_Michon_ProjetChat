@@ -1,8 +1,8 @@
 
 $(document).ready(function () {
-    $("#btnEnvoie").click(function () {
-        $.post("../actions/enregistrer.php", $("#chat").serialize());
-        $("#pseudo").val('');
+    $("#chat").on("submit",function (e) {
+        $.post("../actions/enregistrer.php", $("#chat").serialize())
         $('#message').val('');
+        e.preventDefault();
     });
 });
