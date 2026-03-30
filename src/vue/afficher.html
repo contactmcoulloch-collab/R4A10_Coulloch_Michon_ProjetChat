@@ -12,26 +12,35 @@
 
 <body>
     <h2>Ma messagerie</h2>
-    <br>
-    <form id="chat">
-        <div id="container">
-            <div class="container">
+    <div id="container">
+        <div class="container">
+            <div class="controom" id="contbtnroom">
+                <div class="btnroom" id="br1">Room 1</div>
+                <div class="btnroom" id="br2">Room 2</div>
+                <div class="btnroom" id="br3">Room 3</div>
+                <div class="btnroom" id="br4">Room 4</div>
+                <div class="btnroom" id="br5">Room 5</div>
+            </div>
+            <form id="chat">
                 <div id="top">
-                    <h3>Mon pseudo :</h3>
+                     <input type="text" id="noroommsg" name="noroommsg" hidden>
+                   <h3>Mon pseudo :</h3>
                     <input type="text" id="pseudo" name="pseudo" placeholder="Entrez votre pseudo">
                 </div>
-
+ 
                 <div class="message-area">
                     <h3>Message :</h3>
                     <textarea id="message" name="message" rows="4" cols="50"
                         placeholder="Écrivez votre message ici"></textarea>
                     <input type="button" value="Envoyer" id="btnEnvoie" class="btn">
                 </div>
-            </div>
-
+            </form>
+        </div>
+        <div class="container">
+            <div id="wtitre"><h3>Vous etes dans la Room <span id="noroom"> - (Choisir votre Room de chat) </span></h3></div>
             <div id="inbox" class="inbox">
                 <!-- Messages will be displayed here -->
             </div>
         </div>
-    </form>
+    </div>
 </body>
