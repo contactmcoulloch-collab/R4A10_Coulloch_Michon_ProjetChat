@@ -1,29 +1,37 @@
 <!DOCTYPE html>
+
 <head>
-	<meta charset="UTF-8">
-	<title>Chat</title>
-	<script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
     <script src="enregistrement.js"></script>
     <script src="recuperation.js"></script>
     <link rel="stylesheet" href="designChat.css">
-<h2>Ma messagerie</h2>
-<form id="chat">
-    <div id="container">
-    <div class="container">
-        <div id="top">
-            <h3>Mon pseudo :</h3>
-            <input type="text" id="pseudo" name="pseudo" placeholder="Entrez votre pseudo">
-        </div>
-        
-        <div class="message-area">
-            <h3>Message :</h3>
-            <textarea id="message" name="message" rows="4" cols="50" placeholder="Écrivez votre message ici"></textarea>
-            <input type="submit" value="Envoyer" id="btnEnvoie" class="btn">
-        </div>
-    </div>
+</head>
 
-    <div id ="inbox" class="inbox">
-        <!-- Messages will be displayed here -->
-    </div>
-</div>
-</form>
+<body>
+    <h2>Ma messagerie</h2>
+    <br>
+    <form id="chat">
+        <div id="container">
+            <div class="container">
+                <div id="top">
+                    <h3>Mon pseudo :</h3>
+                    <input type="text" id="pseudo" name="pseudo" placeholder="Entrez votre pseudo">
+                </div>
+
+                <div class="message-area">
+                    <h3>Message :</h3>
+                    <textarea id="message" name="message" rows="4" cols="50"
+                        placeholder="Écrivez votre message ici"></textarea>
+                    <input type="button" value="Envoyer" id="btnEnvoie" class="btn">
+                </div>
+            </div>
+
+            <div id="inbox" class="inbox">
+                <!-- Messages will be displayed here -->
+            </div>
+        </div>
+    </form>
+</body>

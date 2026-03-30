@@ -1,8 +1,29 @@
 
 $(document).ready(function () {
-    $("#chat").on("submit",function (e) {
-        $.post("../actions/enregistrer.php", $("#chat").serialize())
-        $('#message').val('');
-        e.preventDefault();
+    $("#btnEnvoie").on('click', function (e) {
+        enregistrer();
+    e.preventDefault();
+    });
+    $('#chat').on('keyup', function(e) {
+        if (e.key === 'Enter') {
+            enregistrer();
+        }
+    e.preventDefault();
     });
 });
+
+function enregistrer() {
+    console.log("pseudo <" + $('#pseudo').val() + ">  msg <" + $('#message').val() + ">");
+    if ($('#pseudo').val().trim() == "") {
+        alert("Pseudo obligatoire ...");
+        return;
+    }
+    if ($('#message').val().trim() == "") {
+        alert("Message obligatoire ...");
+        return;
+    }
+    
+    $.post("../actions/enregistrer.php", $("#chat").serialize())
+    $('#message').val('');
+
+}

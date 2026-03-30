@@ -1,7 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0; /* Remove default body margin */
-    display: flex; /* Use flexbox for overall layout */
 }
 
 #container {
@@ -28,7 +27,6 @@ h2 {
     margin: 20px 0; /* Margin for top and bottom */
     border-radius: 12px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-     writing-mode: horizontal-tb;
   transform: none;
 }
 
